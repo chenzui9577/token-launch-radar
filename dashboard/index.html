@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Launch Radar — pre-token protocols ranked by implied value</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="radar-mark" aria-hidden="true"><span></span></div>
+    <div>
+      <h1>TOKEN LAUNCH RADAR</h1>
+      <p>Pre-token protocols, priced by their token-bearing peers. Snapshot facts only — no invented signals.</p>
+    </div>
+  </div>
+  <div class="asof" id="asof"></div>
+</header>
+<main id="app" aria-busy="true"></main>
+<footer class="foot">
+  <p>Implied value is a peer comparison built from the sealed DefiLlama snapshot: category median market-cap / TVL of protocols that already record a token, adjusted for 7-day TVL momentum, time running with no token, and chain reach. It is an estimate of what a launch could be worth if the record stayed as it is — not a prediction that a token will launch, and not financial advice.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
